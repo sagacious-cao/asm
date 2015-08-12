@@ -1,0 +1,96 @@
+ Гоменюк Ніна, ЗКСМ-11                                      12.08.2015 19:45:43
+
+                              .386
+ 0000                         Data1 segment
+ 0000  0000000A               	ten		dd	10d
+ 0004  00000004               	four	dd	4
+ 0008  00000020               	hex		dd	20h
+ 000C  000B                   	octo	dw	28+5-16h
+ 000E  00000291               	binar	dd	1010010001b
+ 0012  77 6F 72 37 25 24 78   	text	db	'wor7%$xfgjsfghjsfghjsfgh'
+       66 67 6A 73 66 67 68
+       6A 73 66 67 68 6A 73
+       66 67 68
+ 002A  0000000C               	label10	dd	l10
+ 002E  ----                   			dw	seg l10
+ 0030                         Data1 ends
+
+
+ 0000                         Data2 segment
+ 0000  00000014               	Twenty	dd	20
+ 0004  0000001E               	Thirty	dd	30
+ 0008  00000001               	ONE		dd	1
+ 000C  00000002               	TWO		dd	2
+ 0010                         Data2 ends
+
+
+ 0000                         Code1 segment
+                              	assume	cs: Code1, ds: Data1, es: Data2
+ 0000                         	begin:
+ 0000  26: 8B 8451 00000012   		mov		eax, dword ptr es:text[ecx+edx*2]
+ 0008      FC                 		cld
+ 0009  26: A1 00000000        		mov		eax,twenty;some comment
+ 000F      8B 1D 00000000     		mov		ebx, ten
+ 0015  26: 39 05 00000004     		cmp		es:thirty, eax
+ 001C      0F83 00000030      		jae		l20
+ 0022      FF 2D 0000002A     		jmp		fword ptr label10
+ 0028  26: FF AC51 00000012   		jmp		fword ptr es:text[ecx+edx*2]
+ 0030      A1 0000000C        	l20:mov		eax, dword ptr octo
+ 0035      8B 15 0000000E     		mov		edx, binar
+ 003B      F7 D8              		neg		eax
+ 003D      F7 DA              		neg		edx
+ 003F      FF 35 00000004     		push	four;
+ 0045  26: FF B411 00000012   		push	dword ptr es:text[ecx+edx*1]
+ 004D      EA 0000000C ----   		jmp		far ptr l10
+ 0054                         Code1 ends
+
+
+ 0000                         Code2 segment
+                              	assume cs: Code2
+ 0000      A1 00000004        		mov		eax, four
+ 0005  26: 39 0D 00000000     		cmp		twenty,ecx
+ 000C                         	l10 label far
+ 000C  26: 39 8411 00000008   		cmp		dword ptr es:hex[ecx+edx*1], eax
+ 0014      0F83 0000001A      		jae		l30
+ 001A                         	l30:
+ 001A  26: 8B 15 00000008     		mov		edx, one
+ 0021  26: 8B 0D 0000000C     		mov		ecx, two
+ 0028  26: 8B 8CB3 00000012   		mov		ecx, dword ptr es:text[ebx+esi*4]
+ 0030                         Code2 ends
+                              end begin
+
+
+ Таблиця сегментів:
+
+ Сегмент        Зміщення  Розрядність
+
+  DATA1           0030     32 Bit
+  DATA2           0010     32 Bit
+  CODE1           0054     32 Bit
+  CODE2           0030     32 Bit
+
+
+ Таблиця ідентифікаторів:
+
+ Ідентифікатор  Зміщення  Сегмент    Тип
+
+  TEN             0000     DATA1    DWORD
+  FOUR            0004     DATA1    DWORD
+  HEX             0008     DATA1    DWORD
+  OCTO            000C     DATA1    WORD
+  BINAR           000E     DATA1    DWORD
+  TEXT            0012     DATA1    BYTE
+  LABEL10         002A     DATA1    DWORD
+
+  TWENTY          0000     DATA2    DWORD
+  THIRTY          0004     DATA2    DWORD
+  ONE             0008     DATA2    DWORD
+  TWO             000C     DATA2    DWORD
+
+  BEGIN           0000     CODE1    NEAR
+  L20             0030     CODE1    NEAR
+
+  L10             000C     CODE2    FAR
+  L30             001A     CODE2    NEAR
+
+ Кількість помилок:  0

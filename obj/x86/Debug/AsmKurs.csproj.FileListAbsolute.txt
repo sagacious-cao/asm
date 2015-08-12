@@ -1,0 +1,27 @@
+C:\coding c\AsmKurs\AsmKurs\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\coding c\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.Properties.Resources.resources
+C:\coding c\AsmKurs\AsmKurs\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\coding c\AsmKurs\AsmKurs\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\coding c\AsmKurs\AsmKurs\bin\Debug\AsmKurs.exe
+C:\coding c\AsmKurs\AsmKurs\bin\Debug\AsmKurs.pdb
+C:\coding c\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.exe
+C:\coding c\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.pdb
+C:\coding c\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.FormMain.resources
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.exe
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.pdb
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\bin\Debug\AsmKurs.exe
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\bin\Debug\AsmKurs.pdb
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.Properties.Resources.resources
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.exe
+E:\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.pdb
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.FormMain.resources
+E:\AsmKurs\AsmKurs\bin\Debug\AsmKurs.exe
+E:\AsmKurs\AsmKurs\bin\Debug\AsmKurs.pdb
+E:\AsmKurs\AsmKurs\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.FormMain.resources
+E:\AsmKurs\AsmKurs\obj\x86\Debug\AsmKurs.Properties.Resources.resources
+E:\AsmKurs\AsmKurs\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\AsmKurs\AsmKurs\obj\x86\Debug\GenerateResource.write.1.tlog

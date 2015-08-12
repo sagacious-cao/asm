@@ -1,0 +1,18 @@
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\bin\Release\AsmKurs.exe
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\bin\Release\AsmKurs.pdb
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Release\AsmKurs.Properties.Resources.resources
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Release\AsmKurs.exe
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Release\AsmKurs.pdb
+C:\Documents and Settings\PapaMama\Мои документы\Visual Studio 2010\Projects\AsmKurs\AsmKurs\obj\x86\Release\AsmKurs.FormMain.resources
+E:\AsmKurs\AsmKurs\bin\Release\AsmKurs.exe
+E:\AsmKurs\AsmKurs\bin\Release\AsmKurs.pdb
+E:\AsmKurs\AsmKurs\obj\x86\Release\ResolveAssemblyReference.cache
+E:\AsmKurs\AsmKurs\obj\x86\Release\AsmKurs.FormMain.resources
+E:\AsmKurs\AsmKurs\obj\x86\Release\AsmKurs.Properties.Resources.resources
+E:\AsmKurs\AsmKurs\obj\x86\Release\GenerateResource.read.1.tlog
+E:\AsmKurs\AsmKurs\obj\x86\Release\GenerateResource.write.1.tlog
+E:\AsmKurs\AsmKurs\obj\x86\Release\AsmKurs.exe
+E:\AsmKurs\AsmKurs\obj\x86\Release\AsmKurs.pdb

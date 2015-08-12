@@ -1,0 +1,111 @@
+ Гоменюк Ніна, ЗКСМ-11                                      24.08.2013 15:46:16
+
+                              .386
+                              	ten		dgd	10d
+kurer.asm(4): помилка Синт 5: Невизначена синтаксична конструкція
+                              	four	dd	4999999999999999
+kurer.asm(5): помилка Лекс 2: Завелике число
+                              	hex~	dd	20h
+kurer.asm(6): помилка Лекс 1: Недопустимі символи
+                              	octo	dw	8
+kurer.asm(7): помилка Синт 4: Дані або команда поза сегментом
+                              	binar	dd	1010010001b
+kurer.asm(8): помилка Синт 4: Дані або команда поза сегментом
+                              	text	db	'wor7%$xfgjsfghjsfghjsfgh'
+kurer.asm(9): помилка Синт 4: Дані або команда поза сегментом
+                              	label10	dd	l10
+kurer.asm(10): помилка Синт 4: Дані або команда поза сегментом
+                              			dw	seg 8
+kurer.asm(11): помилка Синт 10: Помилковий операнд оператору Seg
+ 0000                         Data1 ends
+ 0000                         Data2 segment
+                              	Twenty	dd	20,5
+kurer.asm(17): помилка Синт 6: Невірна кількість операндів
+ 0000  0000001E               	Thirty	dd	30
+                              	Thirty	dd	300
+kurer.asm(19): помилка Грам 13: Спроба повторного визначення ідентифікатора користувача
+                              	ONE		dd	"text"
+kurer.asm(20): помилка Грам 14: Недопустимий аргумент директиви
+                              	TWO555555555	dd	2
+kurer.asm(21): помилка Лекс 3: Ідентифікатор довший за 8 символів
+                              	fifty	dd	(28+5)16h)-11b
+kurer.asm(22): помилка Синт 11: Невірний абсолютний вираз
+ 0004                         Data2 ends
+
+
+ 0000                         Code1 segment
+                              	assume	cs: Code1, ds: Data1, es: Data2
+ 0000                         	begin:
+                              		mov		ten, ptr es:text[ecx+edx*2]
+kurer.asm(30): помилка Синт 8: Очікується директива визначення типу
+ 0000      FC                 		cld
+                              		mov		eax,twenty;some comment
+kurer.asm(32): помилка Грам 15: Помилкові операнди
+                              		mov		ebx, teng
+kurer.asm(33): помилка Грам 15: Помилкові операнди
+                              		30 cmp		es:thirty, eax
+kurer.asm(34): помилка Синт 5: Невизначена синтаксична конструкція
+ 0001      0F83 0000000E      		jae		l20
+ 0007      EA                 		jmp		fword ptr label10
+                              		jmp		fword ptr [ecx]
+kurer.asm(37): помилка Грам 15: Помилкові операнди
+                              	l20:mov		eax, dword ptr octo
+kurer.asm(38): помилка Грам 15: Помилкові операнди
+                              		mov		edx, binar,20
+kurer.asm(39): помилка Синт 6: Невірна кількість операндів
+ 000E      F7 D8              		neg		eax
+                              		neg		dx
+kurer.asm(41): помилка Грам 15: Помилкові операнди
+                              		push	ecx;
+kurer.asm(42): помилка Грам 15: Помилкові операнди
+                              		push	dword ptr es:text[ecx+edx*5]
+kurer.asm(43): помилка Синт 9: Помилковий множник регістру
+ 0010      EA 00000000 ----   		jmp		far ptr l10
+ 0017                         Code1 ends
+
+
+ 0000                         Code2 segment
+                              	assume cs: Code2
+                              		mov		eax, four
+kurer.asm(52): помилка Грам 15: Помилкові операнди
+                              		cmp		twenty,ecx
+kurer.asm(53): помилка Грам 15: Помилкові операнди
+ 0000                         	l10 label far
+                              		cmp		dword ptr es:hex[ecx+esp*1], eax
+kurer.asm(55): помилка Синт 7: Невірне використання регістру
+ 0000      0F83               		jae		l30
+                              	l30 label
+kurer.asm(57): помилка Грам 12: Невірний або відсутній тип мітки
+ 0006  26: 8B 15 00000004     		mov		edx, one
+                              		mov		ecx, two
+kurer.asm(59): помилка Грам 15: Помилкові операнди
+                              		mov		ecx, dword ptr es:text[ebx+esi*4]
+kurer.asm(60): помилка Грам 15: Помилкові операнди
+ 000D                         Code2 ends
+                              end begin
+
+
+ Таблиця сегментів:
+
+ Сегмент        Зміщення  Розрядність
+
+  DATA2           0004     32 Bit
+  CODE1           0017     32 Bit
+  CODE2           000D     32 Bit
+
+
+ Таблиця ідентифікаторів:
+
+ Ідентифікатор  Зміщення  Сегмент    Тип
+
+  THIRTY          0000     DATA2    DWORD
+  ONE             0004     DATA2    BYTE
+  TWO555555555    0004     DATA2    DWORD
+  FIFTY           0004     DATA2    DWORD
+
+  BEGIN           0000     CODE1    NEAR
+  L20             000E     CODE1    NEAR
+
+  L10             0000     CODE2    FAR
+
+ Кількість помилок:  29
